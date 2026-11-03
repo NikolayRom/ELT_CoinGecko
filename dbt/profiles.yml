@@ -1,0 +1,14 @@
+crypto_clickhouse:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      driver: http
+      schema: "{{ env_var('CLICKHOUSE_DB') }}"
+      host: "{{ env_var('CLICKHOUSE_HOST') }}"
+      port: "{{ env_var('CLICKHOUSE_PORT') | int }}"
+      user: "{{ env_var('CLICKHOUSE_USER') }}"
+      password: "{{ env_var('CLICKHOUSE_PASSWORD') }}"
+      secure: False
+      connect_timeout: 10
+      use_lw_deletes: False
