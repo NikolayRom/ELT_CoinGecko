@@ -2,3 +2,5 @@
 config
 logs
 .idea
+.user.yml
+dbt/target
