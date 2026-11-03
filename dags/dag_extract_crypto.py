@@ -183,6 +183,7 @@ with DAG(
     start_date=datetime(2026, 1, 1),
     default_args=default_args,
     schedule=timedelta(minutes=5),
+    max_active_runs=1,
     catchup=False,
     tags=['crypto', 'extract', 'load', 's3'],
 ) as dag:
