@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dm_crypto_daily_stats
+    description: "Daily mart volatility and stats of crypto"
+    columns:
+      - name: report_date
+        tests:
+          - not_null
+      - name: coin_id
+        tests:
+          - not_null

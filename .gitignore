@@ -2,3 +2,7 @@
 config
 logs
 .idea
+.user.yml
+dbt/target
+__pycache__/
+*.pyc

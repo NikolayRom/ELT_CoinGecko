@@ -24,7 +24,7 @@ RUN uv pip install --system --no-cache --link-mode=copy \
 
 RUN uv venv /opt/dbt-venv && \
     uv pip install --python /opt/dbt-venv/bin/python --no-cache \
-    "dbt-clickhouse" && \
+    "dbt-clickhouse==1.8.4" "dbt-core==1.8.4" && \
     chown -R airflow:root /opt/dbt-venv
 
 USER airflow

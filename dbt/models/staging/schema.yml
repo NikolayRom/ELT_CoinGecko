@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: raw_crypto
+    database: crypto_dwh
+    tables:
+      - name: silver_crypto_prices
+
+models:
+  - name: stg_crypto_prices
+    description: "Clear prices with no duplicates"
+    columns:
+      - name: coin_id
+        tests:
+          - not_null
+      - name: price_usd
+        tests:
+          - not_null
+      - name: last_updated_at
+        tests:
+          - not_null
