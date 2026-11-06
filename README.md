@@ -52,8 +52,8 @@ A production-grade batch pipeline for near-real-time ingestion, cleaning, dimens
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/NikolayRom/ELT_CoinGecko.git
-cd ELT_CoinGecko
+git clone https://github.com/NikolayRom/ETL_CoinGecko.git
+cd ETL_CoinGecko
 ```
 
 ### 2. Configure Environment Variables
@@ -61,7 +61,7 @@ cd ELT_CoinGecko
 Create your .env configuration file from the template:
 
 ```bash
-cp .env.example .env
+cp .env.ex .env
 ```
 (Make sure to specify your COINGECKO_API_KEY inside .env).
 
